@@ -6,6 +6,7 @@ from passlib.hash import sha256_crypt
 from functools import wraps
 
 
+
 app = Flask(__name__)
 app.config.from_object('config.Config')
 
