@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% include 'includes/_navbar.html' %}
+
+<div class="p-5" style="color: #ffbd4a;">
+
+    <h1>Blarticles</h1>
+    {% for article in articles %}
+    <ul class="list-group">
+        <li class="list-group-item mb-1">
+                <a style="text-decoration: none; color: #ff5c5c;" href="article/{{article.id}}">
+                    {{article.title}}
+                </a>
+                
+            </li>   
+            
+        </ul>
+        {% endfor %}
+    </div>
+{% endblock %}
